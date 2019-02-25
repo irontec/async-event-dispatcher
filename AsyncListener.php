@@ -69,6 +69,18 @@ class AsyncListener
     }
 
     /**
+     * @param $eventName
+     */
+    public function asyncMode($eventName)
+    {
+        if ($this->isSyncMode($eventName)) {
+            if ($this->isSyncMode($eventName)) {
+                unset($this->syncMode[$eventName]);
+            }
+        }
+    }
+
+    /**
      * @param Event  $event
      * @param string $eventName
      */
